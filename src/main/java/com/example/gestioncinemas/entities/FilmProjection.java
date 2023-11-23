@@ -13,6 +13,7 @@ public class FilmProjection {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Temporal(TemporalType.DATE)
     private Date dateProjection;
     private double price;
     @ManyToOne(fetch = FetchType.LAZY)

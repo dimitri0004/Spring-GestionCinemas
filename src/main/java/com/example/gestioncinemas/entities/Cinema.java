@@ -18,6 +18,6 @@ public class Cinema {
     private int nombreSalle;
     @ManyToOne(fetch = FetchType.LAZY)
     private Ville ville;
-    @OneToMany(mappedBy = "salle", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "cinema", fetch = FetchType.LAZY)
     private Collection<Salle> salle;
 }
